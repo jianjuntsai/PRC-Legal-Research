@@ -1,0 +1,31 @@
+{
+  "eval_id": 1,
+  "eval_name": "股东出资责任",
+  "prompt": "公司股东未实缴出资，公司无法清偿债务，债权人能追索股东吗？",
+  "assertions": [
+    {
+      "id": "has_memo_file",
+      "description": "输出了 .md 格式的法律备忘录文件"
+    },
+    {
+      "id": "has_nine_sections",
+      "description": "备忘录包含九个章节（一至九）"
+    },
+    {
+      "id": "cites_primary_sources",
+      "description": "法条引用标注了 [元典API] 来源"
+    },
+    {
+      "id": "cites_article54",
+      "description": "提及公司法第54条（股东出资加速到期）"
+    },
+    {
+      "id": "has_tool_report",
+      "description": "包含工具使用报告（元典API和Tavily调用次数）"
+    },
+    {
+      "id": "has_mermaid",
+      "description": "包含 mermaid 溯引图"
+    }
+  ]
+}

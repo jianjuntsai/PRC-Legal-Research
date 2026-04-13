@@ -1,0 +1,31 @@
+{
+  "eval_id": 3,
+  "eval_name": "竞业限制条款",
+  "prompt": "劳动合同里约定员工离职后两年内不得从事同类行业工作，公司没有约定给补偿金，这个竞业限制条款有效吗？",
+  "assertions": [
+    {
+      "id": "has_memo_file",
+      "description": "输出了 .md 格式的法律备忘录文件"
+    },
+    {
+      "id": "has_nine_sections",
+      "description": "备忘录包含九个章节（一至九）"
+    },
+    {
+      "id": "cites_primary_sources",
+      "description": "法条引用标注了 [元典API] 来源"
+    },
+    {
+      "id": "addresses_no_compensation",
+      "description": "明确回答无补偿金时的法律后果（条款效力 + 补偿金计算方式）"
+    },
+    {
+      "id": "mentions_termination_right",
+      "description": "提及员工在3个月未获补偿时的解除权"
+    },
+    {
+      "id": "has_tool_report",
+      "description": "包含工具使用报告"
+    }
+  ]
+}

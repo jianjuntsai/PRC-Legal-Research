@@ -1,0 +1,63 @@
+{
+  "expectations": [
+    {
+      "text": "输出了 .md 格式的法律备忘录文件",
+      "passed": true,
+      "evidence": "输出文件为 法律备忘录_股东出资责任_2026-04-12.md，格式正确"
+    },
+    {
+      "text": "备忘录包含九个章节（一至九）",
+      "passed": true,
+      "evidence": "文件包含一至九共9个章节：核心结论、研究前提、主要规则依据、分析、实务观点、风险与不确定性、结论与实务建议、主要法规依据清单、关键资料溯引图"
+    },
+    {
+      "text": "法条引用标注了 [元典API] 来源",
+      "passed": true,
+      "evidence": "三处法条引用均标注了 [元典API]：公司法解释三第13条第2款、第26条、公司法第54条"
+    },
+    {
+      "text": "提及公司法第54条（股东出资加速到期）",
+      "passed": true,
+      "evidence": "第三章特别规则第（3）条引用《中华人民共和国公司法》（2023修订）第五十四条原文，第四章4.2节详细分析适用"
+    },
+    {
+      "text": "包含工具使用报告（元典API和Tavily调用次数）",
+      "passed": true,
+      "evidence": "文末工具使用报告列出：元典API（search_fatiao 2次、get_fatiao_detail 2次、search_ptal 1次）、Tavily（3次）"
+    },
+    {
+      "text": "包含 mermaid 溯引图",
+      "passed": true,
+      "evidence": "第九章包含 mermaid graph TD 图，展示法条与资料的引用关系"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "claims": [
+    {
+      "claim": "公司法解释三第13条第2款为现行有效",
+      "type": "factual",
+      "verified": true,
+      "evidence": "标注为2020修正，现行有效，2021年1月1日施行"
+    },
+    {
+      "claim": "新公司法第54条自2024年7月1日施行",
+      "type": "factual",
+      "verified": true,
+      "evidence": "法条引用中明确标注施行时间"
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "法条引用标注了 [元典API] 来源",
+        "reason": "根据用户反馈，[元典API] 标签影响阅读体验，该断言在改版后将失效，建议改为「所有引用法条均有原文内容（非摘要）」"
+      }
+    ],
+    "overall": "断言覆盖全面，但 cites_primary_sources 与用户反馈的来源标注优化方向冲突，建议在下次迭代更新"
+  }
+}
