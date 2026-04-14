@@ -1,6 +1,11 @@
 config.py
-test_skill/.claude/skills/法律研究/scripts/config.py
 __pycache__/
 *.pyc
 .DS_Store
 .playwright-mcp/
+法规检索Skill研发/
+outputs/*
+!outputs/.gitkeep
+.claude/
+test_command/
+法律研究.skill
