@@ -9,8 +9,8 @@ outputs/
 test_command/
 法律研究.skill
 CLAUDE.md
-tavily_search.py
-yuandian_api.py
+/tavily_search.py
+/yuandian_api.py
 元典API接口文档.md
 元典API评测报告.md
 法条详细接口.md
