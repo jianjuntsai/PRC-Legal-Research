@@ -12,7 +12,7 @@ description: "中国法律研究助手。当用户描述涉及中国法律的事
 开始研究前，先读取 `$SCRIPTS/config.py`，检查 API Key 是否已配置：
 
 ```bash
-python -c "
+PYTHONIOENCODING=utf-8 python -c "
 import sys
 sys.path.insert(0, '$SCRIPTS')
 import config
@@ -52,7 +52,7 @@ SCRIPTS="$SKILL_DIR/scripts"
 ### 一手权威资料 — 元典 API
 
 ```bash
-python -c "
+PYTHONIOENCODING=utf-8 python -c "
 import sys, json
 sys.path.insert(0, '$SCRIPTS')
 from yuandian_api import search_fatiao
@@ -78,7 +78,7 @@ print(json.dumps(result, ensure_ascii=False, indent=2))
 ### 二手文献（Secondary Sources）— Tavily 检索
 
 ```bash
-python -c "
+PYTHONIOENCODING=utf-8 python -c "
 import sys, json
 sys.path.insert(0, '$SCRIPTS')
 from tavily_search import search_secondary_sources, search_lawfirm_articles
