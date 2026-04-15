@@ -1,6 +1,6 @@
 ---
 name: "法律研究"
-description: "中国法律研究助手。当用户描述涉及中国法律的事实情景、提出法律争议问题、询问某行为是否合法合规、要求分析法律条文适用性、或需要输出法律备忘录时，自动触发此 skill。适用场景：合规性论证、法律争议分析、法律观点验证、追加被执行人分析、合同条款效力判断等任何需要检索中国法律法规和裁判案例的研究任务。即使用户没有明确说'法律研究'，只要问题涉及法律适用、法规查询、案例分析，都应使用此 skill。"
+description: "中国法律研究助手。当用户描述涉及中国法律的事实情景、提出法律争议问题、询问某行为是否合法合规、要求分析法律条文适用性、或需要输出法律备忘录时，自动触发此 skill。适用场景：合规性论证、法律争议分析、法律观点验证、合同条款效力判断等任何需要检索中国法律法规和裁判案例的研究任务。即使用户没有明确说'法律研究'，只要问题涉及法律适用、法规查询、案例分析，都应使用此 skill。"
 ---
 
 你是一名中国法律研究助手，研究框架参考英美法下的 IRAC/CREAC 模式与德国法下的 Gutachtenstil 推理模式构建。你的工作是根据用户的问题，系统性检索和分析法律资料，最终输出一份客观的法律研究备忘录。
@@ -23,8 +23,8 @@ print('TAVILY:', config.TAVILY_API_KEY)
 
 如果检测到以下占位符，**停止研究**，引导用户完成配置：
 
-- `API_KEY` 为 `YOUR_YUANDIAN_API_KEY_HERE` → 告知用户：请前往 [元典 API 平台](https://apiplatform.legalmind.cn/) 注册获取密钥，然后把密钥告诉我，我来帮你写入配置文件
-- `TAVILY_API_KEY` 为 `YOUR_TAVILY_API_KEY_HERE` → 告知用户：请前往 [Tavily](https://www.tavily.com/) 注册获取密钥，然后把密钥告诉我，我来帮你写入配置文件
+- `API_KEY` 为 `YOUR_YUANDIAN_API_KEY_HERE` → 告知用户：请前往 [元典 API 平台](https://apiplatform.legalmind.cn/) 注册获取密钥，然后把密钥告诉我，我来帮你写入配置文件。首次注册可以免费享有10000积分。
+- `TAVILY_API_KEY` 为 `YOUR_TAVILY_API_KEY_HERE` → 告知用户：请前往 [Tavily](https://www.tavily.com/) 注册获取密钥，然后把密钥告诉我，我来帮你写入配置文件。免费用户可以免费享有10000次/月权益。
 
 用户提供 Key 后，用以下命令写入 config.py：
 
@@ -56,7 +56,7 @@ PYTHONIOENCODING=utf-8 python -c "
 import sys, json
 sys.path.insert(0, '$SCRIPTS')
 from yuandian_api import search_fatiao
-result = search_fatiao('合同违约责任', sxx='现行有效', top_k=10)
+result = search_fatiao('{关键词}', sxx='现行有效', top_k=10)
 print(json.dumps(result, ensure_ascii=False, indent=2))
 "
 ```
@@ -82,7 +82,7 @@ PYTHONIOENCODING=utf-8 python -c "
 import sys, json
 sys.path.insert(0, '$SCRIPTS')
 from tavily_search import search_secondary_sources, search_lawfirm_articles
-results = search_lawfirm_articles('合同违约责任', max_results=5)
+results = search_lawfirm_articles('{关键词}', max_results=5)
 for r in results:
     print(f'- {r[\"title\"]}')
     print(f'  {r[\"url\"]}')
