@@ -45,7 +45,7 @@ sed -i '' 's/YOUR_TAVILY_API_KEY_HERE/YOUR_KEY/' "$SCRIPTS/config.py"
 本 skill 的 Python 脚本位于同目录 `scripts/` 下。所有调用均使用以下路径：
 
 ```bash
-SKILL_DIR="$(find /Users/jianjuntsai/Desktop/元典api/test_skill -name 'SKILL.md' -path '*/法律研究/*' | xargs dirname 2>/dev/null || echo '/Users/jianjuntsai/Desktop/元典api/test_skill/.claude/skills/法律研究')"
+SKILL_DIR="$(find ~/.claude/skills/prc-legal-research -name 'SKILL.md' | xargs dirname 2>/dev/null || echo "$HOME/.claude/skills/prc-legal-research")"
 SCRIPTS="$SKILL_DIR/scripts"
 ```
 
@@ -222,7 +222,7 @@ get_fagui_detail(fgmc="法规名称")
 
 ### 第八阶段：生成法律研究备忘录
 
-输出 Markdown，同时保存文件：`法律备忘录_{主题}_{日期}.md`，保存路径：`/Users/jianjuntsai/Desktop/元典api/`
+输出 Markdown，同时保存文件：`法律备忘录_{主题}_{日期}.md`，保存路径：当前工作目录（即用户运行 Claude Code 时所在的项目目录）
 
 **备忘录格式**（严格遵循）：
 
