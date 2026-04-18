@@ -121,7 +121,7 @@ PRC-Legal-Research/
 
 - 本 skill 输出的备忘录仅供参考，不构成正式法律意见
 - 建议将研究结论交由执业律师复核后使用
-- API 调用会产生费用，请参考[元典 API](https://open.chineselaw.cn/) 和 [Tavily](https://www.tavily.com/) 各自定价。首次注册元典 API 可免费享有 10000 积分；Tavily 免费用户可享有 1000 次/月权益
+- API 调用会产生费用，请参考[元典 API](https://open.chineselaw.cn/) 和 [Tavily](https://www.tavily.com/) 各自定价。首次注册元典 API 可免费享有 1000 积分；Tavily 免费用户可享有 1000 次/月权益
 
 ## License
 

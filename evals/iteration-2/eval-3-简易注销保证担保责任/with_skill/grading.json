@@ -1,0 +1,48 @@
+{
+  "conclusion_accuracy": {
+    "items": [
+      {
+        "conclusion": "保证责任不因注销消灭（保证债务具有独立性，不因保证人注销而当然消灭）",
+        "passed": false,
+        "evidence": "备忘录核心结论及§4.4均明确「不存在承继保证合同权利义务的法定主体」，并称保证合同因甲公司主体资格消灭「归于消灭」。这与参考答案「保证债务独立性、不因保证人注销消灭」的论述方向相悖；张某承担的是另一路径下的连带清偿责任，而非保证合同本身未消灭"
+      },
+      {
+        "conclusion": "股东张某承担连带责任",
+        "passed": true,
+        "evidence": "核心结论及§4.2均明确：张某须对注销前债务承担连带责任，依据《公司法》第240条第3款"
+      },
+      {
+        "conclusion": "责任不以出资额为限",
+        "passed": false,
+        "evidence": "备忘录未就「责任不以出资额为限」作出明确表述；仅引用公司法第240条第3款原文称「对注销登记前的债务承担连带责任」，但未点明该责任不受出资额上限约束"
+      },
+      {
+        "conclusion": "股东享有追偿权（可依《民法典》第700条向原债务人追偿）",
+        "passed": false,
+        "evidence": "备忘录全文未提及《民法典》第700条，亦未涉及张某作为代位清偿人的追偿权"
+      }
+    ],
+    "score": 0.25
+  },
+  "statute_recall": {
+    "reference_statutes": 4,
+    "recalled": 3,
+    "missed": [
+      "《民法典》第700条（保证人追偿权）"
+    ],
+    "score": 0.75
+  },
+  "statute_precision": {
+    "total_cited": 6,
+    "accurate": 6,
+    "inaccurate": [],
+    "score": 1.0
+  },
+  "summary": {
+    "conclusion_accuracy": 0.25,
+    "statute_recall": 0.75,
+    "statute_precision": 1.0,
+    "average": 0.67,
+    "grade": "C"
+  }
+}

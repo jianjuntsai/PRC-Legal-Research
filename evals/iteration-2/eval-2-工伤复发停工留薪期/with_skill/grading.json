@@ -1,0 +1,41 @@
+{
+  "conclusion_accuracy": {
+    "items": [
+      {
+        "conclusion": "工伤复发可获停工留薪待遇（甲公司应给予停工留薪待遇）",
+        "passed": true,
+        "evidence": "核心结论：「甲公司应当给予」；第七节结论：「甲公司应当给予张女士工伤复发期间的停工留薪期待遇」"
+      },
+      {
+        "conclusion": "停工留薪期不超过12个月",
+        "passed": true,
+        "evidence": "§4.5：「工伤复发后停工留薪期……如伤情严重或情况特殊……最长不超过24个月（原12个月+延长12个月）」；第33条原文明确引用「停工留薪期一般不超过12个月」"
+      },
+      {
+        "conclusion": "北京地方规定适用",
+        "passed": true,
+        "evidence": "第三节引用《北京市工伤职工停工留薪期管理办法》第3条、第8条、第10条、第11条；第五节引用金杜律所北京专项文章"
+      }
+    ],
+    "score": 1.0
+  },
+  "statute_recall": {
+    "reference_statutes": 3,
+    "recalled": 3,
+    "missed": [],
+    "score": 1.0
+  },
+  "statute_precision": {
+    "total_cited": 9,
+    "accurate": 9,
+    "inaccurate": [],
+    "score": 1.0
+  },
+  "summary": {
+    "conclusion_accuracy": 1.0,
+    "statute_recall": 1.0,
+    "statute_precision": 1.0,
+    "average": 1.0,
+    "grade": "A"
+  }
+}

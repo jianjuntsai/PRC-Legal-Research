@@ -1,0 +1,18 @@
+{
+  "eval_id": "eval-1",
+  "question": "建设工程施工合同未办理备案手续，是否影响合同效力？",
+  "reference_source": {
+    "institution": "金杜律师事务所",
+    "url": "https://www.kingandwood.com/cn/zh/insights/latest-thinking/will-filing-affect-the-validity-of-a-construction-contract.html"
+  },
+  "reference_conclusions": [
+    "备案属管理性规范而非效力性强制规定，未备案不影响合同效力",
+    "强制备案制度已被正式删除（2018年9月《修改决定》、2019年3月《修改通知》）",
+    "最高人民法院多份判决确认未备案合同有效"
+  ],
+  "reference_statutes": [
+    { "statute": "《招标投标法》", "article": "第47条" },
+    { "statute": "《房屋建筑和市政基础设施工程施工招标投标管理办法》", "article": "原第47条（已删除）" },
+    { "statute": "《最高人民法院关于审理建设工程施工合同纠纷案件适用法律问题的解释（一）》", "article": "相关条款" }
+  ]
+}

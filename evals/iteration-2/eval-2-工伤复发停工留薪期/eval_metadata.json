@@ -1,0 +1,19 @@
+{
+  "eval_id": "eval-2",
+  "question": "工伤职工工伤复发后再次休假，甲公司是否应给予停工留薪期待遇（北京）？",
+  "reference_source": {
+    "institution": "金杜律师事务所",
+    "url": "https://www.kingandwood.com/cn/zh/insights/latest-thinking/faqs-on-the-recognition-of-work-related-injury-recurrence-and-related-issues-in-beijing.html"
+  },
+  "reference_conclusions": [
+    "工伤复发认定：北京实操中经办机构通常不受理核准申请，实践以医院诊断证明为主要依据",
+    "诊断证明载明工伤复发的，裁审机关普遍认可；未载明但伤情与原工伤部位一致的，亦可作为依据",
+    "停工留薪期依据《北京市停工留薪期分类目录》确定，一般不超过12个月",
+    "停工留薪期内原工资福利待遇不变"
+  ],
+  "reference_statutes": [
+    { "statute": "《工伤保险条例》", "article": "第33条（停工留薪期一般不超过12个月，原待遇不变）" },
+    { "statute": "《工伤保险条例》", "article": "第38条（工伤复发享有停工留薪期待遇）" },
+    { "statute": "《北京市工伤职工停工留薪期管理办法》", "article": "第3条、第11条" }
+  ]
+}

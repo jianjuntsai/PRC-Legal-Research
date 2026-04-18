@@ -1,0 +1,46 @@
+{
+  "conclusion_accuracy": {
+    "items": [
+      {
+        "conclusion": "构成短线交易",
+        "passed": true,
+        "evidence": "核心结论：「构成」；第七节：「张某的行为构成《证券法》第44条规定的短线交易」"
+      },
+      {
+        "conclusion": "适用\"一端说\"（卖出时具备特定身份即适用）",
+        "passed": true,
+        "evidence": "§4.3及核心结论明确引用新规第4条「投资者买入时不具备特定身份，但买入后卖出时具备的，应当适用本规定」，即一端说；§4.5综合判断亦明确「新规第4条明确买入时不具备身份、卖出时具备的同样适用」"
+      },
+      {
+        "conclusion": "时点以过户登记日为准",
+        "passed": true,
+        "evidence": "§4.2：「依据新规第5条，张某买入时点为2025年10月25日（过户登记日），而非协议签署日（9月30日）」；核心结论及第七节均采用此认定"
+      },
+      {
+        "conclusion": "法律后果：收益归入公司",
+        "passed": true,
+        "evidence": "核心结论法律后果栏：「张某卖出所得收益归公司所有，公司董事会应当收回」；实务建议：「依《证券法》第44条第3款，应当在收到请求后30日内收回张某的短线交易所得收益」"
+      }
+    ],
+    "score": 1.0
+  },
+  "statute_recall": {
+    "reference_statutes": 2,
+    "recalled": 2,
+    "missed": [],
+    "score": 1.0
+  },
+  "statute_precision": {
+    "total_cited": 6,
+    "accurate": 6,
+    "inaccurate": [],
+    "score": 1.0
+  },
+  "summary": {
+    "conclusion_accuracy": 1.0,
+    "statute_recall": 1.0,
+    "statute_precision": 1.0,
+    "average": 1.0,
+    "grade": "A"
+  }
+}

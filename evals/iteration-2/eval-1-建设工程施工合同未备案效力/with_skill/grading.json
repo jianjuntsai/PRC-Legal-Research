@@ -1,0 +1,44 @@
+{
+  "conclusion_accuracy": {
+    "items": [
+      {
+        "conclusion": "未备案合同有效（备案属管理性规范而非效力性强制规定）",
+        "passed": true,
+        "evidence": "核心结论：「未备案不导致合同无效」；§4.2明确区分管理性规范与效力性强制规范，称「备案义务的主要依据属部门规章或地方规章……违反部门规章不必然导致合同无效」"
+      },
+      {
+        "conclusion": "区分管理性规范与效力性强制规定",
+        "passed": true,
+        "evidence": "§4.2标题即为「备案义务是否属于效力性强制规范」，并以文义解释、体系解释、目的论解释三重论证，明确结论为管理性规定而非效力性强制规定"
+      },
+      {
+        "conclusion": "识别备案制度已被废除（2018年9月《修改决定》、2019年3月《修改通知》）",
+        "passed": false,
+        "evidence": "备忘录§4.5及§2仅泛泛提及「全国多地取消」「《建工司法解释（一）》修订时亦删除了原第21条」，未识别《招标投标法》2018年《修改决定》及《房屋建筑和市政基础设施工程施工招标投标管理办法》2019年修订具体删除条文，与参考答案核心结论不完全吻合"
+      }
+    ],
+    "score": 0.67
+  },
+  "statute_recall": {
+    "reference_statutes": 3,
+    "recalled": 1,
+    "missed": [
+      "《招标投标法》第47条",
+      "《房屋建筑和市政基础设施工程施工招标投标管理办法》原第47条（已删除）"
+    ],
+    "score": 0.33
+  },
+  "statute_precision": {
+    "total_cited": 8,
+    "accurate": 8,
+    "inaccurate": [],
+    "score": 1.0
+  },
+  "summary": {
+    "conclusion_accuracy": 0.67,
+    "statute_recall": 0.33,
+    "statute_precision": 1.0,
+    "average": 0.67,
+    "grade": "C"
+  }
+}
